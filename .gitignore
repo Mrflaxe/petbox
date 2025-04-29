@@ -1,11 +1,25 @@
-HELP.md
 .gradle
+.gitkeep
 build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+!packages/starter-lobby/src/main/**/build/
+!packages/starter-lobby/src/test/**/build/
 
-### STS ###
+### IntelliJ IDEA ###
+.idea/modules.xml
+.idea/jarRepositories.xml
+.idea/compiler.xml
+.idea/libraries/
+*.iws
+*.iml
+*.ipr
+out/
+!packages/starter-lobby/src/main/**/out/
+!packages/starter-lobby/src/test/**/out/
+.idea/
+Rust.iml
+
+### Eclipse ###
 .apt_generated
 .classpath
 .factorypath
@@ -14,17 +28,8 @@ build/
 .springBeans
 .sts4-cache
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
-
-### IntelliJ IDEA ###
-.idea
-*.iws
-*.iml
-*.ipr
-out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+!packages/starter-lobby/src/main/**/bin/
+!packages/starter-lobby/src/test/**/bin/
 
 ### NetBeans ###
 /nbproject/private/
@@ -35,3 +40,7 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Mac OS ###
+.DS_Store
+/libraries/common/src/main/java/ru/starmc/commons/inventory/cqrs/querry/.gitkeep
